@@ -8,9 +8,29 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-h1 {
   font-family: "Courier New", monospace;
+}
+
+main {
+    display: flex;
+    align-items: center;
+}
+
+
+button {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    font-size: 1rem;
+    font-weight: 600;
+    border-style: none;
+    margin: 0.5rem;
+}
+
+.mode-container, .selection-container {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
 }
 
 .grid-parent {
