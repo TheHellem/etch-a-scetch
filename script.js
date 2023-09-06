@@ -1,7 +1,4 @@
-let defaultGridSize = 121;
-
-
-function createGridChildren(gridSize) {
+function createGridChildren(gridSize = 64) {
     const gridParent = document.querySelector(".grid-parent");
     const cellSize = 780 / gridSize;
     
@@ -18,4 +15,4 @@ function createGridChildren(gridSize) {
     };
   }
 
-createGridChildren(defaultGridSize);
+createGridChildren()
