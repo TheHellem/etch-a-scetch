@@ -1,3 +1,4 @@
+
 function createGridChildren(gridSize = 64) {
     const gridParent = document.querySelector(".grid-parent");
     const cellSize = 780 / gridSize;
@@ -15,4 +16,4 @@ function createGridChildren(gridSize = 64) {
     };
   }
 
-createGridChildren()
+createGridChildren(121)
