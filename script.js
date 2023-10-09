@@ -1,5 +1,5 @@
 
-function detectMode (option) {
+function detectMode () {
 
 }
 
@@ -20,4 +20,4 @@ function createGridChildren(gridSize = 64) {
     };
   }
 
-createGridChildren(121)
+createGridChildren(99)
