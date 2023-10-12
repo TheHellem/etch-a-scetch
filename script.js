@@ -25,7 +25,7 @@ slider.addEventListener("input", (e) => {
   gridSize = document.querySelector("#slider").value;
   gridParent.innerHTML = ''
   createGridChildren(gridSize)
-  console.log(gridSize);
+  document.querySelector('#grid-size-display').innerHTML = `${gridSize}`
 });
 
 createGridChildren();
