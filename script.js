@@ -4,6 +4,7 @@ function setMode(mode = "default") {
   // her er ideeen å ha if for hvile mode det er
   return [mode];
 }
+
 const handleMouseOver = (e) => {
   e.target.style.backgroundColor = "black";
 };
@@ -21,11 +22,13 @@ function createGridChildren(gridSize = 64) {
 
 const slider = document.querySelector("#slider");
 
-slider.addEventListener("input", (e) => {
+slider.addEventListener("input", () => {
   gridSize = document.querySelector("#slider").value;
-  gridParent.innerHTML = ''
-  createGridChildren(gridSize)
-  document.querySelector('#grid-size-display').innerHTML = `${gridSize}`
+  gridParent.innerHTML = "";
+  createGridChildren(gridSize);
+  document.querySelector(
+    "#grid-size-display"
+  ).innerHTML = `${gridSize}x${gridSize}`;
 });
 
 createGridChildren();
