@@ -14,6 +14,14 @@ const rainbowHexArr = [
   "#70369d",
 ];
 
+let currentIndex = 0;
+
+function getNextColor() {
+  const currentColor = rainbowHexArr[currentIndex];
+  currentIndex = (currentIndex + 1) % rainbowHexArr.length; // Increment index and wrap around
+  return currentColor;
+}
+
 // Handle drawing
 
 const handleMouseOver = (e) => {
@@ -23,7 +31,10 @@ const handleMouseOver = (e) => {
       break;
     case "erase":
       e.target.style.backgroundColor = "lightgray";
-      break
+      break;
+    case "rainbow":
+      e.target.style.backgroundColor = getNextColor();
+      break;
   }
 };
 
@@ -55,5 +66,4 @@ slider.addEventListener("input", () => {
   ).innerHTML = `${gridSize}x${gridSize}`;
 });
 
-console.log(mode);
 createGridChildren();
