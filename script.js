@@ -2,7 +2,11 @@
 
 let mode = "default";
 
-const setMode = (newMode) => (mode = newMode);
+const setMode = (newMode) => {
+  mode = newMode;
+  currentModeClass = ".mode-"+newMode;
+  document.querySelector(currentModeClass).style.backgroundColor = "yellow";
+}
 
 const rainbowHexArr = [
   "#e81416",
@@ -18,7 +22,7 @@ let currentIndex = 0;
 
 function getNextColor() {
   const currentColor = rainbowHexArr[currentIndex];
-  currentIndex = (currentIndex + 1) % rainbowHexArr.length; // Increment index and wrap around
+  currentIndex = (currentIndex + 1) % rainbowHexArr.length; 
   return currentColor;
 }
 

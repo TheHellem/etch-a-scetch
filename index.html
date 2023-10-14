@@ -12,10 +12,11 @@
         <div class="mode-container">
             <button class="mode-rainbow" onclick="setMode('rainbow')">RAINBOW</button>
             <button class="mode-erase" onclick="setMode('erase')">ERASE</button>
+            <button class="mode-default" onclick="setMode('default')">BLACK</button>
         </div>
         <div class="grid-parent"></div>
         <div class="selection-container">
-            <div>
+            <div class="grid-size-slider">
                 <p>Select Grid-size</p>
                 <input type="range" orient="vertical" min="2" max="100" value="64" id="slider"/>
                 <p id="grid-size-display">64x64</p>
@@ -25,4 +26,4 @@
     </main>
     <script src="script.js"></script>
 </body>
-</html>54
+</html>
