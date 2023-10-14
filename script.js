@@ -1,5 +1,9 @@
 // Handle modes
 
+let mode = "default";
+
+const setMode = (newMode) => (mode = newMode);
+
 const rainbowHexArr = [
   "#e81416",
   "#ffa500",
@@ -10,17 +14,17 @@ const rainbowHexArr = [
   "#70369d",
 ];
 
-
-
-function setMode(mode = "default") {
-  // her er ideeen å ha if for hvile mode det er
-  return [mode];
-}
-
 // Handle drawing
 
 const handleMouseOver = (e) => {
-  e.target.style.backgroundColor = "#000000";
+  switch (mode) {
+    case "default":
+      e.target.style.backgroundColor = "#000000";
+      break;
+    case "erase":
+      e.target.style.backgroundColor = "lightgray";
+      break
+  }
 };
 
 // Make grid
@@ -51,4 +55,5 @@ slider.addEventListener("input", () => {
   ).innerHTML = `${gridSize}x${gridSize}`;
 });
 
+console.log(mode);
 createGridChildren();
