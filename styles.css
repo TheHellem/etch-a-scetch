@@ -81,6 +81,17 @@ input[type="range"]::-webkit-slider-thumb {
   height: 500px;
 }
 
-.selected-mode {
+.mode-default, .btn-reset:active {
   background-color: yellow;
+}
+
+/* Footer section */
+
+footer {
+  padding-top: 1rem;
+}
+
+.github-logo{
+height: auto;
+width: 1.2rem;
 }
