@@ -1,8 +1,12 @@
 # Etch-A-Sketch
 
-*NB! Work in progress*
+![alt text](https://github.com/the/[reponame]/blob/[branch]/image.jpg?raw=true)
 
-A straight forward Etch-A-Sketch (like the childrens toy) program made as part of The Odin Project's(TOP) foundations course.
-Made with some vanilla js, and a lot of flex-box. 
+
+Etch-a-sketch project from the Odin Project. 
 
 [Here](https://www.theodinproject.com/lessons/foundations-etch-a-sketch) is a link to the description of the project description from TOP
+
+### Some learning outcomes
+
+
