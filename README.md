@@ -1,5 +1,7 @@
 # Etch-A-Sketch
 
+Straightforward Etch-a-sketch game. [Try it here!](https://thehellem.github.io/etch-a-sketch/).
+
 ![Screenshot of project](https://github.com/TheHellem/etch-a-sketch/blob/main/public/Screenshot%20from%202023-10-19%2012-28-34.png)
 
 
