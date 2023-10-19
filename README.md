@@ -10,4 +10,4 @@ Etch-a-sketch project from the Odin Project.
 ### Some learning outcomes
 
 * Increased understanding of DOM manipulation
-' Practise using listeners and handling events
+* Practise using listeners and handling events
