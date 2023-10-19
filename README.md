@@ -1,6 +1,6 @@
 # Etch-A-Sketch
 
-![alt text](https://github.com/the/[reponame]/blob/[branch]/image.jpg?raw=true)
+![Screenshot of project](https://github.com/TheHellem/etch-a-sketch/blob/main/public/Screenshot%20from%202023-10-19%2012-28-34.png)
 
 
 Etch-a-sketch project from the Odin Project. 
@@ -9,4 +9,5 @@ Etch-a-sketch project from the Odin Project.
 
 ### Some learning outcomes
 
-
+* Increased understanding of DOM manipulation
+' Practise using listeners and handling events
