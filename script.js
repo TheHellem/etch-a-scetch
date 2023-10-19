@@ -3,9 +3,9 @@
 let mode = "default";
 
 const setMode = (newMode) => {
+  document.querySelector('.mode-'+mode).style.backgroundColor = "white"
   mode = newMode;
-  currentModeClass = ".mode-"+newMode;
-  document.querySelector(currentModeClass).style.backgroundColor = "yellow";
+  document.querySelector(".mode-"+newMode).style.backgroundColor = "yellow";
 }
 
 const rainbowHexArr = [
@@ -47,7 +47,7 @@ const handleMouseOver = (e) => {
 const gridParent = document.querySelector(".grid-parent");
 
 function createGridChildren(gridSize = 64) {
-  const cellSize = 780 / gridSize;
+  const cellSize = 500 / gridSize;
   for (let i = 0; i < gridSize ** 2; i++) {
     const gridSquare = document.createElement("div");
     gridSquare.style.cssText = `width: ${cellSize}px; height: ${cellSize}px;`;
